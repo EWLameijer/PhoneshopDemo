@@ -7,8 +7,10 @@ public class Get : Base
     [Fact]
     public void Should_return_both_phones()
     {
+        // act
         IEnumerable<Phone> phones = PhoneService.Get();
 
-        Assert.Equal(2, phones.Count());
+        // assert
+        Assert.Equal(3, phones.Count());
     }
 }

@@ -11,6 +11,11 @@ public class PhoneService : IPhoneService
         new Phone { Id = 2, Brand = "Huawei", Type = "SpyPhone 1984" },
     };
 
+    public PhoneService(List<Phone>? phones = null)
+    {
+        if (phones != null) _phones = phones;
+    }
+
     public IEnumerable<Phone> Get() => _phones;
 
     public Phone GetById(int id) => _phones.First(x => x.Id == id);

@@ -9,8 +9,8 @@ public class GetById : Base
     public void Returns_the_phone_if_it_exists()
     {
         Phone phone = PhoneService.GetById(2)!;
-        Assert.Equal("Huawei", phone.Brand);
-        Assert.Equal("SpyPhone 1984", phone.Type);
+        Assert.Equal("Google", phone.Brand);
+        Assert.Equal("Pixel 7", phone.Type);
     }
 
     // throws an ArgumentException if the phone does not exist
