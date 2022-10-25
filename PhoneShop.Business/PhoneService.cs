@@ -7,8 +7,10 @@ public class PhoneService : IPhoneService
 {
     private readonly List<Phone> _phones = new()
     {
-        new Phone { Id = 1, Brand = "Apple", Type = "IPhone 11" },
-        new Phone { Id = 2, Brand = "Huawei", Type = "SpyPhone 1984" },
+        new Phone { Id = 3, Brand = "Apple", Type = "IPhone 11" },
+        new Phone { Id = 1, Brand = "Huawei", Type = "SpyPhone 1984" },
+        new Phone { Id = 4, Brand = "Google", Type = "Pixel 8" },
+        new Phone { Id = 2, Brand = "Samsung", Type = "Galaxy A53" },
     };
 
     public PhoneService(List<Phone>? phones = null)
