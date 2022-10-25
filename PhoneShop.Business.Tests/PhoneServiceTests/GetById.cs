@@ -6,7 +6,7 @@ public class GetById : Base
 {
     // gets the phone if it exists
     [Fact]
-    private void Returns_the_phone_if_it_exists()
+    public void Returns_the_phone_if_it_exists()
     {
         Phone phone = PhoneService.GetById(2)!;
         Assert.Equal("Huawei", phone.Brand);
