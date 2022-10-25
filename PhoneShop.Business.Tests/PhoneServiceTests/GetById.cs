@@ -4,7 +4,6 @@ namespace PhoneShop.Business.Tests.PhoneServiceTests;
 
 public class GetById : Base
 {
-
     // gets the phone if it exists
     [Fact]
     private void Returns_the_phone_if_it_exists()
@@ -13,7 +12,6 @@ public class GetById : Base
         Assert.Equal("Huawei", phone.Brand);
         Assert.Equal("SpyPhone 1984", phone.Type);
     }
-
 
     // throws an ArgumentException if the phone does not exist
     [Fact]
