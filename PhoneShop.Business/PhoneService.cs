@@ -18,7 +18,7 @@ public class PhoneService : IPhoneService
         if (phones != null) _phones = phones;
     }
 
-    public IEnumerable<Phone> Get() => _phones;
+    public IEnumerable<Phone> Get() => _phones.Take(2);
 
     public Phone GetById(int id) => _phones.First(x => x.Id == id);
 }
